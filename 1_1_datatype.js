@@ -29,8 +29,8 @@ console.log(globalName);
 // favor Immutable data type always(한 번 선언하면 안 바뀔 거)
 // reason to use 1. security // 2. thread safety // 3. reduce mistakes
 
-// 4. Variable types
-// 1) primitive type :
+// 4. Variable types(메모리가 저장되는 방식)
+// 1) primitive type : (값이 바로 저장)
 
 // number : special numeric values : infinity / -infinity / NaN(not a number)
 const infinity = 1/0;
