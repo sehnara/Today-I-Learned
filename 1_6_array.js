@@ -63,4 +63,3 @@ console.log(family);
 console.log(family.toString());
 console.log(family.toLocaleString());
 
-console.log(family);
