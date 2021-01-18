@@ -63,4 +63,75 @@ console.log(family);
 console.log(family.toString());
 console.log(family.toLocaleString());
 
-console.log(family);
+// quiz
+console.clear();
+{
+    const s_fruits = ['apple', 'banana', 'orange'];
+    const stringFruit = s_fruits.toString();
+    console.log(`1. ${stringFruit}`);
+}
+
+{
+    const s_fruits = 'apple, kiwi, banana, cherry';
+    const a_fruits = [];
+    console.log(s_fruits.charAt(6));    
+    
+}
+{
+    const array = [1,2,3,4,5];
+    console.log(`3. ${array.sort((a,b)=>b-a)}`);
+}
+{
+    const array = [1,2,3,4,5];
+    console.log(`4_1. ${array.slice(2)}`);
+    class Student {
+        constructor(name, age, enrolled, score){
+            this.name = name;
+            this.age = age;
+            this.enrolled = enrolled;
+            this.score = score;
+        }
+    }
+    const students = [
+        new Student('A', 29, true, 45),
+        new Student('B', 28, false, 80),
+        new Student('C', 30, true, 90),
+        new Student('D', 40, false, 66),
+        new Student('E', 18, true, 88)
+    ];   
+    console.log('4_2.')
+    const renewal = students.slice(2);
+    for (let i = 0; i < renewal.length; i++) {       
+        console.log(renewal[i]);
+    }    
+    console.log('--------------------------------------------------');
+    const enrolledStudents = new Array();
+    const results = [];
+
+    for (const element of students) {
+        if(element.score === 90){
+            console.log('5. ' + element.name);
+        }
+        if(element.enrolled){
+            enrolledStudents.push(element);
+        }
+        results.push(element.score);
+    } 
+    enrolledStudents.forEach(ele=>{
+        console.log(ele.name);
+    });
+    console.log('7. '+ results); 
+
+    let avg = 0;
+    results.forEach(element=>{
+        if(element<50){
+            console.log('8. Yes');
+        }
+        avg += element;
+    });
+    console.log('9. ' + avg/results.length);
+    console.log('10. '+ results.join(','));
+    console.log('Bonus. ' + (results.sort((a,b)=>a-b)).join(','));
+}
+
+
