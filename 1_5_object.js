@@ -23,7 +23,7 @@ console.log(sehoon.name);
 console.log(sehoon['name']); // <<<<<
 sehoon['name'] = 'hanna';    // 바꿀 수도 있다.
 console.log(sehoon['name']);
-
+ 
 // 언제 dot을 쓰고 언제 배열형태로 해야함?
 // >>> 거의 대부분 코딩할 때는 dot을 쓰고, 
 // 배열형태는....
@@ -86,3 +86,18 @@ const fruit1 = {color : 'red'};
 const fruit2 = {color : 'blue', size : 'big'};
 const mixed = Object.assign({}, fruit1, fruit2);
 console.log(mixed);
+
+const gyul = {
+  size : 'big',
+  sweetness : 'high',
+  assessiablity : 'high',
+  season : 'winter',
+  bithSite : 'jeju'
+};
+const orange = {
+    size : 'big',
+    hardness : 'high'
+};
+
+const halrabong = Object.assign({},gyul, orange);
+console.log(halrabong);

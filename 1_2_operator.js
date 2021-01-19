@@ -27,6 +27,14 @@ console.log(stringFive!=numberFive);
 console.log(stringFive===numberFive);
 console.log(stringFive!==numberFive);
 
+console.clear();
+console.log(0 == false);
+console.log(0 === false); // num !== boolean
+console.log(''==false);
+console.log(''===false);  // string !== boolean 
+console.log(null==undefined);
+console.log(null===undefined);
+
 // 8. Conditional opertors : if
 
 // 9. Ternary opertors: ?
@@ -54,3 +62,12 @@ for (let w = 0; w < 10; w++) {
     console.log(w);
 }
 // 
+
+const sehoon = {
+    name : "sehoon",
+    age : 27,
+    face : "good"
+}
+for (const key in sehoon) {
+    console.log(key);        
+}
