@@ -15,7 +15,7 @@ console.log(user);
 // 2. await ** 기다려!
 // async 함수에서만 쓸 수 있음
 function delay(ms){
-    return new Promise(resolve => resolve => setTimeout(resolve,ms));
+    return new Promise(resolve => setTimeout(resolve,ms));
 }
 async function getApple(){
     await delay(2000);
